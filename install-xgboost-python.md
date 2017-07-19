@@ -24,11 +24,12 @@ choco install -y vcbuildtools
 ```
 * Clone the latest version of the repo using the following command. Take note of the location of this cloned repo:
 ```sh
-git clone git clone https://github.com/dmlc/xgboost.git
+git clone https://github.com/dmlc/xgboost.git
 ```
 ### (Option one) Installing pre-compiled binaries
 * This method is the easiest and fastest of the two. First, download the latest `libxgboost.dll` from [here](http://www.picnet.com.au/blogs/guido/post/2016/09/22/xgboost-windows-x64-binaries-for-download/). You must choose between the Non-GPU or GPU version depending on whether you want the library to use your video card (if compatible). This DLL is responsible for creating the interface between XGBoost and Python.
 * Store the downloaded `libxgboost.dll` into `xgboost/python-package/xgboost/` (inside the cloned repo).
+* Rename the file from `libxgboost.dll` to `xgboost.dll`.
 * Open an elevated command prompt, navigate to `xgboost/python-package` and run the following command:
 ```sh
 python setup.py install
@@ -61,7 +62,7 @@ mkdir build && cd build
 ```sh
 cmake -G "MinGW Makefiles" ..
 ```
-* Look for the newly created `libxgboost.dll` and store it into `xgboost/python-package/xgboost/`.
+* Look for the newly created `xgboost.dll` and store it into `xgboost/python-package/xgboost/`.
 * Open an elevated command prompt, navigate to `xgboost/python-package` and run the following command:
 ```sh
 python setup.py install
