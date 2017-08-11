@@ -23,15 +23,7 @@ This is a guide for creating a Windows Server 2016 instance on Google Cloud Plat
 
 ![Image](/img/create-windows-server-gcp-5.png)
 
-* Next, we need to do two things. Enable TCP port 3389 for RDP connections, and get a username and password. On the main sidebar, select **VPC network** and then **Firewall rules**.
-
-![Image](/img/create-windows-server-gcp-6.png)
-
-* Check if there is a rule for `default-allow-rdp`. If this already exists then there is no need to create one. Otherwise, select to **CREATE NEW FIREWALL RULE** and specify ingress TCP port 3389 with the same settings as the image below. Make sure that the protocol / port is written as `tcp:3389` and is allowed for all targets on all IP ranges.
-
-![Image](/img/create-windows-server-gcp-7.png)
-
-* Next we need to back to the [VM instances page](https://console.cloud.google.com/compute/). This time, click on the instance's name.
+* Next, close the popup window and click on the instance's name.
 
 ![Image](/img/create-windows-server-gcp-8.png)
 
@@ -39,7 +31,7 @@ This is a guide for creating a Windows Server 2016 instance on Google Cloud Plat
 
 ![Image](/img/create-windows-server-gcp-9.png)
 
-* Follow the steps of setting up a user and you will get a password. Make sure to copy both the username and password and keep them somewhere safe. Generating a password takes around 5 minutes.
+* Follow the steps of setting up a user and you will get a password. Make sure to copy both the username and password and keep them somewhere safe. Generating a password should not take long. However, sometimes it may hang here. Refresh the page if this happens.
 
 ![Image](/img/create-windows-server-gcp-10.png)
 
