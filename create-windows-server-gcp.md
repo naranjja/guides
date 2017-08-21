@@ -7,7 +7,7 @@ This is a guide for creating a Windows Server 2016 instance on Google Cloud Plat
 
 ![Image](/img/create-windows-server-gcp-1.png)
 
-* Set the desired settings and then change the boot disk to **Windows Server 2016**.
+* Set the desired settings and then change the boot disk to **Windows Server 2016**. Take note that there are two versions, the Core version is command-line only and the other one includes a Desktop. Depending on your requirements, you might choose one over the other. Usually, you would choose the one with a Desktop.
 
 ![Image](/img/create-windows-server-gcp-2.png)
 
