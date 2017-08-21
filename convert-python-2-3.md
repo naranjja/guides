@@ -1,4 +1,4 @@
-# Convert Python scripts (and Jupyter Notebooks) from version 2 to 3
+# Convert scripts and notebooks from Python2 to Python3
 - Make sure `PATH` variable contains path to `<PYTHON INSTALLATION>/Tools/scripts`
 - Make sure Python3 is installed
 
@@ -8,15 +8,34 @@
 - This overwrites Python2 code with Python3 code and creates a Python2 backup file
 
 ## .ipynb
-- Run `pip install jupyter_contrib_nbextensions` using a command prompt
-- Run `jupyter contrib nbextension install --user` using a command prompt
-- Go to folder where Python2 `some_python2_notebook.ipynb` is located using a command prompt
-- Run `jupyter notebook` using a command prompt
+- Run `pip install jupyter_contrib_nbextensions`
+- Run `jupyter contrib nbextension install --user`
+- Go to folder that contains `some_python2_notebook.ipynb` using a command prompt
+- Run `jupyter notebook`
+
+![Image](/img/convert-python-2-3-1.png)
+
 - Click on **Nbextensions**
-- Uncheck **Disable configuration for nbextensions without explicit compatibility**
-- Look for **2to3 Converter**
-- Mark the checkbox
+
+![Image](/img/convert-python-2-3-2.png)
+
+- Uncheck **disable configuration for nbextensions without explicit compatibility**
+
+![Image](/img/convert-python-2-3-3.png)
+
+- Look for **2to3 Converter** and check it
+
+![Image](/img/convert-python-2-3-4.png)
+
 - Open Python2 `some_python2_notebook.ipynb`
 - Select all cells
+
+![Image](/img/convert-python-2-3-5.png)
+
 - Click on airplane icon to convert selected cells to Python3
+
+![Image](/img/convert-python-2-3-6.png)
+
 - Save notebook
+
+![Image](/img/convert-python-2-3-7.png)
