@@ -27,6 +27,11 @@ This is a guide for creating a MongoDB instance on Google Cloud Platform that is
 
 ![Image](/img/create-mongodb-gcp-6.png)
 
+* Create a firewall exception rule for the required port.
+```
+gcloud compute firewall-rules create mongodb --allow tcp:27017
+```
+
 * Next, click on **Authentication**. Leave the default database as `admin` and the authentication mechanism as `SCRAM-SHA-1`. Add the username and password observed before.
 
 ![Image](/img/create-mongodb-gcp-7.png)
